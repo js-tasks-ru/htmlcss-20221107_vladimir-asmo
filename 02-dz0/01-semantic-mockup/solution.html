@@ -4,6 +4,110 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Семантическая разметка страницы</title>
+  <style>
+    :root {
+      --main-gap-size: 20px;
+    }
+
+    *, *::before, ::after {
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 16px;
+      color: #efefef;
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+      min-height: 100%;
+    }
+
+    h1 {
+      margin: 0;
+      padding: 20px;
+    }
+
+    h2 {
+      margin: 0;
+      padding: 25px 20px;
+    }
+
+    ul,
+    ol {
+      margin: 0;
+    }
+
+    header {
+      background-color: tomato;
+      text-align: center;
+      flex: 0 0 auto;
+    }
+
+    nav {
+      background-color: blueviolet;
+    }
+
+    nav ul {
+      font-size: 0;
+      padding: 20px 0;
+      list-style-type: none;
+    }
+
+    nav li {
+      display: inline-block;
+      font-size: 1rem;
+      padding-left: 15px;
+    }
+
+    nav li:first-child {
+      padding-left: 0;
+    }
+
+    nav a {
+      color: #efefef;
+    }
+
+    main {
+      background-color: lightgreen;
+      padding: 35px 30px;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: var(--main-gap-size);
+      flex: 1 0 auto;
+    }
+
+    article {
+      background-color: #331feb;
+      margin-bottom: 20px;
+      flex: 1 auto;
+      min-width: 200px;
+      width: calc(50% - var(--main-gap-size));
+    }
+    article ul,
+    article ol {
+      margin: 10px 0 40px;
+    }
+
+    article li {
+      line-height: 1.6;
+    }
+
+    footer {
+      background-color: darkviolet;
+      min-width: 80px;
+      flex: 0 0 auto;
+    }
+
+    footer p {
+      margin: 0;
+      font-size: 2.5rem;
+      padding: 20px 30px;
+      text-align: center;
+    }
+  </style>
 </head>
 <body>
 <header>
