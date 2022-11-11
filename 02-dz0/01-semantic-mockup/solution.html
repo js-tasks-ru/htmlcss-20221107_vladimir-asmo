@@ -1,4 +1,149 @@
-<!DOCTYPE html>
 <html lang="ru">
-    <!-- Ваше решение -->
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Семантическая разметка страницы</title>
+  <style>
+    :root {
+      --main-gap-size: 20px;
+    }
+
+    *, *::before, ::after {
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 16px;
+      color: #efefef;
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+      min-height: 100%;
+    }
+
+    h1 {
+      margin: 0;
+      padding: 20px;
+    }
+
+    h2 {
+      margin: 0;
+      padding: 25px 20px;
+    }
+
+    ul,
+    ol {
+      margin: 0;
+    }
+
+    header {
+      background-color: tomato;
+      text-align: center;
+      flex: 0 0 auto;
+    }
+
+    nav {
+      background-color: blueviolet;
+    }
+
+    nav ul {
+      font-size: 0;
+      padding: 20px 0;
+      list-style-type: none;
+    }
+
+    nav li {
+      display: inline-block;
+      font-size: 1rem;
+      padding-left: 15px;
+    }
+
+    nav li:first-child {
+      padding-left: 0;
+    }
+
+    nav a {
+      color: #efefef;
+    }
+
+    main {
+      background-color: lightgreen;
+      padding: 35px 30px;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: var(--main-gap-size);
+      flex: 1 0 auto;
+    }
+
+    article {
+      background-color: #331feb;
+      margin-bottom: 20px;
+      flex: 1 auto;
+      min-width: 200px;
+      width: calc(50% - var(--main-gap-size));
+    }
+    article ul,
+    article ol {
+      margin: 10px 0 40px;
+    }
+
+    article li {
+      line-height: 1.6;
+    }
+
+    footer {
+      background-color: darkviolet;
+      min-width: 80px;
+      flex: 0 0 auto;
+    }
+
+    footer p {
+      margin: 0;
+      font-size: 2.5rem;
+      padding: 20px 30px;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+<header>
+  <h1>Header</h1>
+  <nav>
+    <ul>
+      <li><a href="#">Navigation 1</a></li>
+      <li><a href="#">Navigation 2</a></li>
+      <li><a href="#">Navigation 3</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+  <article>
+    <h2>Article 1</h2>
+    <ul>
+      <li>Оригинальная трилогия</li>
+      <li>Трилогия приквелов</li>
+      <li>Трилогия сиквелов</li>
+    </ul>
+  </article>
+
+  <article>
+    <h2>Article 2</h2>
+    <ol>
+      <li>Эпизод IV — Новая надежда</li>
+      <li>Эпизод V — Империя наносит ответный удар</li>
+      <li>Эпизод VI — Возвращение джедая</li>
+    </ol>
+  </article>
+</main>
+
+<footer>
+  <p>Footer</p>
+</footer>
+</body>
+
 </html>
