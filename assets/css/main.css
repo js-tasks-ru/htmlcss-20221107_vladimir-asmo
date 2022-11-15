@@ -1,5 +1,15 @@
+/* ? Globals */
 @import './normalize.css';
 @import '../fonts/fonts.css';
+
+/* ? Primitives */
+@import '../../components/text/text.css';
+@import '../../components/title/title.css';
+
+/* ? Modules */
+@import '../../components/header/header.css';
+@import '../../components/content/content.css';
+@import '../../components/footer/footer.css';
 
 :root {
     --white: #ffffff;
