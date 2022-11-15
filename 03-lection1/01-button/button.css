@@ -4,8 +4,6 @@
   min-width: 189px;
   min-height: 48px;
   padding: 15px 65px 14px;
-  background-color: var(--primary);
-  color: var(--secondary-font-color);
   font-family: inherit;
   font-weight: 500;
   font-size: 1rem;
@@ -17,8 +15,14 @@
     border 200ms ease-in-out;
 }
 
+.button_primary {
+  background-color: var(--primary);
+  color: var(--secondary-font-color);
+}
+
 .button_secondary {
   background-color: var(--secondary);
+  color: var(--secondary-font-color);
 }
 
 .button_alternate {
@@ -27,7 +31,7 @@
   border: 1px solid var(--border-color);
 }
 
-.button:hover {
+.button_primary:hover {
   background-color: var(--primary-state-hover);
 }
 
@@ -35,6 +39,7 @@
   background-color: inherit;
   border-color: var(--border-hover-color);
 }
+
 .button_secondary:hover {
   background-color: var(--secondary-state-hover);
 }
