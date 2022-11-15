@@ -48,19 +48,6 @@
 }
 
 .button:disabled {
+  pointer-events: none;
   opacity: var(--primary-opacity);
-  cursor: default;
-}
-
-.button:disabled:hover {
-  background-color: var(--primary);
-}
-
-.button_secondary:disabled:hover {
-  background-color: var(--secondary);
-}
-
-.button_alternate:disabled:hover {
-  border-color: var(--border-color);
-  background-color: var(--alternate);
 }
