@@ -3,6 +3,7 @@
 @import '../fonts/fonts.css';
 
 /* ? Primitives */
+@import '../../components/container/container.css';
 @import '../../components/text/text.css';
 @import '../../components/title/title.css';
 
