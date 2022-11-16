@@ -1,16 +1,10 @@
 
 .footer {
-  min-height: 262px;
   text-align: center;
   padding: 61px 0;
 }
 
 .footer__title {
-  max-width: 640px;
-  margin: 0 auto;
+  margin-bottom: 32px;
 }
 
-.footer__text {
-  max-width: 640px;
-  margin: 0 auto;
-}
