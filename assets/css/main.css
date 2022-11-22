@@ -7,11 +7,13 @@
 @import '../../components/container/container.css';
 @import '../../components/text/text.css';
 @import '../../components/title/title.css';
+@import '../../03-lection1/01-button/button.css';
 
 /* ? Modules */
 @import '../../components/header/header.css';
 @import '../../components/content/content.css';
 @import '../../components/footer/footer.css';
+@import '../../components/card/card.css';
 
 :root {
     --white: #ffffff;
@@ -44,6 +46,8 @@
 
     --primary-opacity: 0.5;
     --secondary-opacity: 0.8;
+
+    --primary-shadow-color: rgba(33, 36, 41, 0.05);
 }
 
 body {
