@@ -1,0 +1,52 @@
+.sceleton {
+  display: flex;
+  flex-direction: column;
+  padding: 24px 40px 32px 24px;
+  border: 1px solid var(--grey-3);
+  border-radius: 8px;
+  gap: 24px;
+}
+
+.sceleton__header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 16px;
+}
+
+.sceleton__userpic {
+  flex-shrink: 0;
+  min-width: 64px;
+  min-height: 64px;
+  border-radius: 100%;
+  background: var(--grey-2);
+}
+
+.sceleton__user-data {
+  flex-basis: 100%;
+}
+
+.sceleton__text {
+  min-height: 20px;
+  margin-bottom: 8px;
+  background: linear-gradient(
+    92.51deg,
+    #dde2e5 6.44%,
+    #e2e6e8 38.47%,
+    #f3f5f5 56.48%,
+    #e3e7ea 77.5%,
+    #dde2e5 102.52%
+  );
+}
+
+.sceleton__text:last-child {
+  margin-bottom: 0;
+}
+
+.sceleton__text_size_sm {
+  max-width: 29.71%;
+}
+
+.sceleton__text_size_md {
+  max-width: 44.39%;
+}
